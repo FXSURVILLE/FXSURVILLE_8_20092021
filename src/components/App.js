@@ -15,9 +15,9 @@ export default function App() {
         <Header />
           <Switch>
             <Route path="/">
-              <Home />
+              {/* <Home />
             </Route>
-            <Route path="/a_propos">
+            <Route path="/a_propos"> */}
               <APropos />
             </Route>
             <Route path="*">

@@ -8,10 +8,7 @@ class APropos extends React.Component {
         <div>
             <div id='A_propos_box'>
                 <img src={AproposHeader} alt='A_propos_header' className='A_propos_header'/>
-                <div class="parent">
-                    <div class="child1"></div>
-                    <div class="child1 child2"></div>
-                </div>
+                <div className='darken'></div>
             </div>
             <div id='a_propos_body'>
                 <div id='fiability'>
