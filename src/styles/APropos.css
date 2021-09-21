@@ -1,0 +1,29 @@
+#A_propos_box {
+    position: relative;
+    width: auto;
+    height: 223px;
+    margin: 20px;
+}
+
+.A_propos_header {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+}
+.parent {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+
+@media screen and (min-width:768px) {
+    #A_propos_box {
+        margin: 44px 100px 20px 100px;
+    }
+}
