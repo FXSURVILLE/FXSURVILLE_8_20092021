@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home'
 import Footer from './Footer'
 import APropos from './APropos'
+import Lodging from './Lodging'
 import Error from './Error'
 
 
@@ -19,6 +20,9 @@ export default function App() {
             </Route>
             <Route path="/a_propos">
               <APropos />
+            </Route>
+            <Route path="/lodging">
+              <Lodging />
             </Route>
             <Route path="*">
               <Error />

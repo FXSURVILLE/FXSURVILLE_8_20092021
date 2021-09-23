@@ -11,13 +11,17 @@ class APropos extends React.Component {
                 <div className='darken'></div>
             </div>
             <div id='a_propos_body'>
-                <div id='fiability'>
+                <div id='fiability' className='Apropos_info'>
+                <p>Fiabilité</p>
                 </div>
-                <div id='respect'>
+                <div id='respect' className='Apropos_info'>
+                <p>Respect</p>
                 </div>
-                <div id='service'>
+                <div id='service' className='Apropos_info'>
+                <p>Service</p>
                 </div>
-                <div id='responsability'>
+                <div id='responsability' className='Apropos_info'>
+                <p>Sécurité</p>
                 </div>
             </div>
         </div>
