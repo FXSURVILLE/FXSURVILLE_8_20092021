@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faCoffee, faStar } from '@fortawesome/free-solid-svg-icons'
 import '../styles/Lodging.css'
 
 
@@ -24,11 +26,11 @@ class Lodging extends React.Component {
                 </div>
                 <div id='lodging_rate'>
                     <div className='stars'>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} className='grey' />
+                        <FontAwesomeIcon icon={faStar} className='grey' />
                     </div>
                     <div className='lodging_host'>
                         <div className='host_identity'>nom
@@ -39,9 +41,13 @@ class Lodging extends React.Component {
                 </div>
             </div>
             <div className='infos'>
-                <div className='dropdown description'>description
+                <div className='dropdown description'>
+                    <p>Description</p>
+                    <FontAwesomeIcon icon={faChevronDown} className='chevron' />
                 </div>
-                <div className='dropdown equipement'>equipement
+                <div className='dropdown equipement'>
+                    <p>Equipement</p>
+                    <FontAwesomeIcon icon={faChevronDown} className='chevron' />
                 </div>
             </div>
         </div>
