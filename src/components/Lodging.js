@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faCoffee, faStar } from '@fortawesome/free-solid-svg-icons'
+import { ReactComponent as Star } from '../assets/star.svg'
+import { ReactComponent as Chevron } from '../assets/chevron.svg'
 import '../styles/Lodging.css'
 
 
@@ -26,11 +26,11 @@ class Lodging extends React.Component {
                 </div>
                 <div id='lodging_rate'>
                     <div className='stars'>
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} className='grey' />
-                        <FontAwesomeIcon icon={faStar} className='grey' />
+                        <Star className='star' />
+                        <Star className='star' />
+                        <Star className='star' />
+                        <Star className='star grey' />
+                        <Star className='star grey' />
                     </div>
                     <div className='lodging_host'>
                         <div className='host_identity'>nom
@@ -41,13 +41,19 @@ class Lodging extends React.Component {
                 </div>
             </div>
             <div className='infos'>
-                <div className='dropdown description'>
-                    <p>Description</p>
-                    <FontAwesomeIcon icon={faChevronDown} className='chevron' />
+                <div className='dropdowns'>
+                    <div className='dropdown description'>
+                        <p>Description</p>
+                        <Chevron className='chevron' />
+                    </div>
+                    <p className='text_dropdown'>text</p>
                 </div>
-                <div className='dropdown equipement'>
-                    <p>Equipement</p>
-                    <FontAwesomeIcon icon={faChevronDown} className='chevron' />
+                <div className='dropdowns'>
+                    <div className='dropdown equipement'>
+                        <p>Equipement</p>
+                        <Chevron className='chevron' />
+                    </div>
+                    <p className='text_dropdown'>text</p>
                 </div>
             </div>
         </div>

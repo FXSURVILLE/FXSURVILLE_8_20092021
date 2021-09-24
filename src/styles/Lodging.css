@@ -48,11 +48,17 @@
     margin-bottom: 15px;
 }
 .stars {
-    color: #FF6060;
-    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    width: 30%;
 }
-.stars>.grey {
-    color: #E3E3E3;
+.star {
+    max-height: 15px;
+    max-width: 15px;
+    margin-top: 10px;
+}
+.grey path {
+    fill: #E3E3E3;
 }
 
 .lodging_host {
@@ -73,13 +79,16 @@
 .infos {
     margin: 0px 20px 0px 20px;
 }
+.dropdowns {
+    margin-bottom: 20px;
+    width: 100%;
+}
 .dropdown {
     background: #FF6060;
     font-size: 13px;
     color: white;
     border-radius: 5px;
     height: 30px;
-    margin-bottom: 20px;
     padding-left: 12px;
     display: flex;
     justify-content: space-between;
@@ -89,9 +98,19 @@
     margin: 0px;
 }
 .chevron {
-    color: white;
-    font-size: 20px;
+    margin-top: 15px;
     margin-right: 10px;
+    max-height: 9px;
+    max-width: 16px;
+}
+.text_dropdown {
+    background: #F7F7F7;
+    font-size: 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #FF6060;
+    padding: 20px 10px 10px 10px;
+    margin: 0px;
 }
 
 
@@ -105,6 +124,7 @@
     
     #lodging_infos {
         margin: 0px 100px 0px 100px;
+        width: auto;
         display: flex;
         justify-content: space-between;
     }
@@ -128,13 +148,23 @@
     }
     
     #lodging_rate {
-        width: 30%;
+        /* width: 30%; */
         margin-bottom: 15px;
         display: flex;
         flex-direction: column-reverse;
     }
     .stars {
-        font-size: 30px;
+        justify-content: end;
+        width: auto;
+    }
+    .star {
+        max-height: 30px;
+        max-width: 30px;
+    }    
+    
+    .lodging_host {
+        display: flex;
+        justify-content: end;
     }
     
     .host_identity {
@@ -154,18 +184,22 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .dropdowns {
+        width: calc(50% - 3%);
+        margin-bottom: 20px;
+    }
     .dropdown {
         font-size: 18px;
         border-radius: 10px;
-        width: calc(50% - 5%);
         height: 52px;
-        margin-bottom: 20px;
     }
     .dropdown>p {
         padding-top: 7px;
     }
     .chevron {
-        font-size: 40px;
+        margin-top: 10px;
         margin-right: 12px;
+        max-height: 16px;
+        max-width: 27px;
     }
 }
