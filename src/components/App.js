@@ -1,37 +1,52 @@
 import React from 'react'
 // import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
+import Router from './Router'
 import Header from './Header'
-import Home from './Home'
 import Footer from './Footer'
-import APropos from './APropos'
-import Lodging from './Lodging'
-import Error from './Error'
+// import { BrowserRouter, BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import Home from './Home'
+// import APropos from './APropos'
+// import Lodging from './Lodging'
+// import Error from './Error'
 
 
-export default function App() {
-  return (
-    <Router>
+// export default function App() {
+//   return (
+//     <Router>
+//       <div>
+//         <Header />
+//           <Switch>
+//             <Route path="/">
+//               <Home />
+//             </Route>
+//             <Route path="/a_propos">
+//               <APropos />
+//             </Route>
+//             <Route path="/lodging">
+//               <Lodging />
+//             </Route>
+//             <Route path="*">
+//               <Error />
+//             </Route>
+//           </Switch>
+//         <Footer />
+//       </div>
+//     </Router>
+//   );
+// }
+
+class App extends React.Component{
+  render (){
+    return (
       <div>
+      <BrowserRouter>
         <Header />
-          <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
-            <Route path="/a_propos">
-              <APropos />
-            </Route>
-            <Route path="/lodging">
-              <Lodging />
-            </Route>
-            <Route path="*">
-              <Error />
-            </Route>
-          </Switch>
+        <Router/>
         <Footer />
+      </BrowserRouter>
       </div>
-    </Router>
-  );
+    )
+  }
 }
-
-// export default App;
+export default App;
