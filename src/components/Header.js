@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import '../styles/Header.css'
 
@@ -8,8 +9,8 @@ class Header extends React.Component {
         <div className='kasa-header'>
           <img src={logo} alt='logo-kasa' className='kasa-logo'/>
           <nav className='kasa-nav'>
-            <li>ACCUEIL</li>
-            <li>A PROPOS</li>
+            <Link to="/">ACCUEIL</Link>
+            <Link to="/a_propos">A PROPOS</Link>
           </nav>
         </div>
       );

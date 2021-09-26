@@ -12,21 +12,21 @@ class Router extends React.Component {
     render(){
         const routes = [
             {
-                path: '/',
+                path: "/",
                 component : Home,
                 exact: true
             },
             {
-                path: '/logement/:id',
+                path: "/logement/:id",
                 component : Lodging
             },
             {
-                path: '/about',
+                path: "/a_propos",
                 component : APropos ,
                 exact : true
             },
             {
-                path: '*',
+                path: "*",
                 component : Error ,
             },
         ]

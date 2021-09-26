@@ -18,11 +18,12 @@
     padding-right: 10px;
 }
 
-.kasa-nav>li {
+.kasa-nav>a {
     padding-right: 10px;
     color: #FF6060;
+    text-decoration: none;
 }
-.kasa-nav>li:hover {
+.kasa-nav>a:hover {
     text-decoration: underline;
 }
 
@@ -42,7 +43,7 @@
         padding-right: 50px;
     }
     
-    .kasa-nav>li {
+    .kasa-nav>a {
         padding-right: 57px;
     }
 }
