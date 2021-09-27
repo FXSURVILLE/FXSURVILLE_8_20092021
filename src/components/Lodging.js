@@ -1,8 +1,82 @@
 import React from 'react';
-import { ReactComponent as Star } from '../assets/star.svg'
-import { ReactComponent as Chevron } from '../assets/chevron.svg'
+import Star from '../assets/star.svg'
+import Chevron from '../assets/chevron.svg'
 import '../styles/Lodging.css'
 
+
+
+// const Lodgings = require('../datas/Lodgings.json')
+
+
+// class Lodgings extends React.Component {
+//     constructor() {
+//         super(props)
+//         this.id = this.props.id
+//         this.rating = this.props.rating
+//         const range = [1, 2, 3, 4, 5]
+//         const scaleType = starType === 'light' ? (
+//             <Star className='star' />
+//         ) : (
+//             <Star className='star grey' />
+//         )
+        
+//     }
+ 
+//     render() {
+//         return (
+//             <div id='lodging_body'>
+//                 <div className='lodging_picture'>
+//                     <div className='picture'></div>
+//                 </div>
+//                 <div id='lodging_infos'>
+//                     <div>
+//                         <h2>Detail</h2>
+//                         <p>Ville</p>
+//                         <div id='lodging_tags'>
+//                             <div className='lodging_tag'>tag1
+//                             </div>
+//                             <div className='lodging_tag'>tag2
+//                             </div>
+//                             <div className='lodging_tag'>tag3
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <div id='lodging_rate'>
+//                         <div className='stars'>
+//                         {range.map((rangeElem) => this.rating >= rangeElem ? (
+// 					        <Star className='star' />) : (
+//                             <Star className='star grey' />)
+// 			            )}  
+//                         </div>
+//                         <div className='lodging_host'>
+//                             <div className='host_identity'>nom
+//                             </div>
+//                             <div className='host_picture'>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div className='infos'>
+//                     <div className='dropdowns'>
+//                         <div className='dropdown description'>
+//                             <p>Description</p>
+//                             <Chevron className='chevron' />
+//                         </div>
+//                         <p className='text_dropdown'>text</p>
+//                     </div>
+//                     <div className='dropdowns'>
+//                         <div className='dropdown equipement'>
+//                             <p>Equipement</p>
+//                             <Chevron className='chevron' />
+//                         </div>
+//                         <p className='text_dropdown'>text</p>
+//                     </div>
+//                 </div>
+//             </div>
+//           );
+//     }
+// }
+// export default Lodgings
 
 class Lodging extends React.Component {
     render() {

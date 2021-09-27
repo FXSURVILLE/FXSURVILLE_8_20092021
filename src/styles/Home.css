@@ -40,15 +40,10 @@
 }
 
 #card_body {
-    margin: 0;
     margin-bottom: 22px;
 }
 
-#card_wrap {
-    margin: 0px;
-}
-
-.card_link {
+.card_item {
     height: 255px;
     object-fit: cover;
     border-radius: 10px;
@@ -56,51 +51,8 @@
     position: relative;
 }
 
-.card_link{
-    position: relative;
-    width: 100%;
-    height: 255px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-.card_link>img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.faded {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 10px;
-}
-.card_link>h2 {
-    position: absolute;
-    font-weight: 500;
-    font-size: 18px;
-    color: #fff;
-    margin: 0px;
-    bottom: 0px;
-    padding: 0px 20px 15px 20px;
-}
 
-.card_link>h2 {
-	font-weight: 500;
-    font-size: 18px;
-    position: absolute;
-    bottom: 0px;
-    padding: 0px 20px 15px 20px;
-}
-
-@media screen and (min-width:768px){
+@media screen and (min-width:992px){
     #home_body{
         margin: 0 100px 0 100px;
     }
@@ -124,7 +76,6 @@
     } 
 
     #card_body {
-        /* margin: 50px 50px 50px 50px; */
         background: #F7F7F7;
         border-radius: 25px;
         margin-bottom: 43px;
@@ -133,12 +84,14 @@
     #card_wrap {
         padding: 31px 20px 25px 20px;
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .card_link {
+    .card_item {
         height: 340px;
         width: calc(33% - 60px);
         margin: 25px 30px 25px 30px;
     }
+    
 }

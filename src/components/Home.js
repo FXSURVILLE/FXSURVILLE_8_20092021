@@ -1,7 +1,10 @@
 import React from 'react';
 import homeHeader from '../assets/home_header.png'
 import backgroundCard from '../assets/background_card.png'
+import Card from './Card';
 import '../styles/Home.css'
+
+const logements = require('../datas/logements.json')
 
 class Home extends React.Component {
     render() {
@@ -13,23 +16,13 @@ class Home extends React.Component {
                 <p>Chez vous, partout et ailleurs</p>
             </div>
             <div id='card_body'>
-                <div id='card_wrap'>
-                    <div className='card_link'>
-                        <img src={backgroundCard} alt='background_card'/>
-                        <div className='faded'></div>
-                        <h2>Titre de la location</h2>
-                    </div>
-                    <div className='card_link'>
-                        <img src={backgroundCard} alt='background_card'/>
-                        <div className='faded'></div>
-                        <h2>Titre de la location</h2>
-                    </div>
-                    <div className='card_link'>
-                        <img src={backgroundCard} alt='background_card'/>
-                        <div className='faded'></div>
-                        <h2>Titre de la location</h2>
-                    </div>
-                </div>
+                <ul id='card_wrap'>
+                    {logements.map((logement)=>
+                    <li key={logement.id} className='card_item'>
+                        <Card logement={logement} />
+                    </li>
+                    )}
+                </ul>
             </div>
         </div>
       );

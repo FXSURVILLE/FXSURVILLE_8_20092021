@@ -42,7 +42,7 @@
     width: 16px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:992px) {
     #A_propos_box {
         margin: 44px 100px 20px 100px;
     }

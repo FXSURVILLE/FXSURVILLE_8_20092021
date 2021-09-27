@@ -42,7 +42,7 @@ class App extends React.Component{
       <div>
       <BrowserRouter>
         <Header />
-        <Router/>
+        <Router />
         <Footer />
       </BrowserRouter>
       </div>
