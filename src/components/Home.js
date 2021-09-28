@@ -1,6 +1,6 @@
 import React from 'react';
 import homeHeader from '../assets/home_header.png'
-import backgroundCard from '../assets/background_card.png'
+// import backgroundCard from '../assets/background_card.png'
 import Card from './Card';
 import '../styles/Home.css'
 

@@ -49,7 +49,7 @@
 }
 .stars {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     width: 30%;
 }
 .star {
@@ -164,7 +164,7 @@
     
     .lodging_host {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
     
     .host_identity {
