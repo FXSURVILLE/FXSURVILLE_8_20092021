@@ -6,6 +6,7 @@ import {ReactComponent as Chevron} from '../assets/chevron.svg'
 import Carousel from './Carousel';
 import Stars from './Stars';
 import Tags from './Tags';
+import Dropdown from './Dropdown';
 import '../styles/Lodging.css'
 
 
@@ -34,12 +35,6 @@ class Logement extends React.Component {
         return this.logement
         })
     }
-//     constructor() {
-//         super(props)
-//         this.id = this.props.id
-//         this.rating = this.props.rating
-//         const range = [1, 2, 3, 4, 5]        
-//     }
  
     render() {
     //     const { match, location } = this.props;
@@ -69,20 +64,8 @@ class Logement extends React.Component {
                     </div>
                 </div>
                 <div className='infos'>
-                    <div className='dropdowns'>
-                        <div className='dropdown description'>
-                            <p>Description</p>
-                            <Chevron className='chevron' />
-                        </div>
-                        <p className='text_dropdown'>{this.logement.description}</p>
-                    </div>
-                    <div className='dropdowns'>
-                        <div className='dropdown equipement'>
-                            <p>Equipement</p>
-                            <Chevron className='chevron' />
-                        </div>
-                        <p className='text_dropdown'>{this.logement.equipments}</p>
-                    </div>
+                    <Dropdown name="Description"  text={this.logement.description}/>
+                    <Dropdown name="Equipement"  text={this.logement.equipments}/>
                 </div>
             </div>
           );

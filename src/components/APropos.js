@@ -1,6 +1,6 @@
 import React from 'react';
 import AproposHeader from '../assets/mountain_lr.png'
-import { ReactComponent as Chevron } from '../assets/chevron.svg'
+import Dropdown from './Dropdown';
 import '../styles/APropos.css'
 
 const aProposText = require('../datas/a_propos_text.json')
@@ -15,49 +15,17 @@ class APropos extends React.Component {
             </div>
             <div id='a_propos_body'>
               <div className='Apropos_dropdowns'>
-                <div className='Apropos_info'>
-                  <p>Fiabilité</p>
-                  <Chevron className='Apropos_chevron' />
-                </div>
-                <p className='text_dropdown'>{aProposText.fiabilité}</p>
+                <Dropdown name="Fiabilité"  text={aProposText.fiabilité}/>
               </div>
               <div className='Apropos_dropdowns'>
-                <div className='Apropos_info'>
-                  <p>Respect</p>
-                  <Chevron className='Apropos_chevron' />
-                </div>
-                <p className='text_dropdown'>{aProposText.respect}</p>
+                <Dropdown name="Respect"  text={aProposText.respect}/>
               </div>
               <div className='Apropos_dropdowns'>
-                <div className='Apropos_info'>
-                  <p>Service</p>
-                  <Chevron className='Apropos_chevron' />
-                </div>
-                <p className='text_dropdown'>{aProposText.service}</p>
+                <Dropdown name="Service"  text={aProposText.service}/>
               </div>
               <div className='Apropos_dropdowns'>
-                <div className='Apropos_info'>
-                  <p>Sécurité</p>
-                  <Chevron className='Apropos_chevron' />
-                </div>
-                <p className='text_dropdown'>{aProposText.securité}</p>
+                <Dropdown name="Sécurité"  text={aProposText.securité}/>
               </div>
-                {/* <div id='fiability' className='Apropos_info'>
-                  <p>Fiabilité</p>
-                  <Chevron className='chevron' />
-                </div>
-                <div id='respect' className='Apropos_info'>
-                  <p>Respect</p>
-                  <Chevron className='chevron' />
-                </div>
-                <div id='service' className='Apropos_info'>
-                  <p>Service</p>
-                  <Chevron className='chevron' />
-                </div>
-                <div id='responsability' className='Apropos_info'>
-                  <p>Sécurité</p>
-                  <Chevron className='chevron' />
-                </div> */}
             </div>
         </div>
       );
