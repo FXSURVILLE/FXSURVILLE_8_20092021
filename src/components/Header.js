@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import '../styles/Header.css'
 
@@ -9,8 +9,8 @@ class Header extends React.Component {
         <div className='kasa-header'>
           <img src={logo} alt='logo-kasa' className='kasa-logo'/>
           <nav className='kasa-nav'>
-            <Link to="/">ACCUEIL</Link>
-            <Link to="/a_propos">A PROPOS</Link>
+            <NavLink exact to="/" className='navlink' activeClassName="selected">ACCUEIL</NavLink>
+            <NavLink to="/a_propos" className='navlink' activeClassName="selected">A PROPOS</NavLink>
           </nav>
         </div>
       );

@@ -3,8 +3,9 @@ import React from 'react';
 import { withRouter } from "react-router";
 // import Star from '../assets/star.svg'
 import {ReactComponent as Chevron} from '../assets/chevron.svg'
-import Tags from './Tags';
+import Carousel from './Carousel';
 import Stars from './Stars';
+import Tags from './Tags';
 import '../styles/Lodging.css'
 
 
@@ -48,7 +49,8 @@ class Logement extends React.Component {
         return (
             <div id='lodging_body'>
                 <div className='lodging_picture'>
-                    <div className='picture'></div>
+                    {/* <div className='picture'></div> */}
+                    <Carousel pictures={this.logement.pictures}/>
                 </div>
                 <div id='lodging_infos'>
                     <div>

@@ -3,13 +3,6 @@
     font-weight: 500;
 }
 
-.picture {
-    margin: 27px 20px 15px 20px;
-    height: 255px;
-    background: #C4C4C4;
-    border-radius: 10px;
-}
-
 #lodging_infos {
     margin: 0px 20px 20px 20px;
 }
@@ -98,7 +91,7 @@
     margin: 0px;
 }
 .chevron {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-right: 10px;
     max-height: 9px;
     max-width: 16px;
@@ -114,14 +107,7 @@
 }
 
 
-@media screen and (min-width:992px) {
-    .picture {
-        margin: 20px 100px 30px 100px;
-        height: 415px;
-        background: #C4C4C4;
-        border-radius: 25px;
-    }
-    
+@media screen and (min-width:992px) {    
     #lodging_infos {
         margin: 0px 100px 0px 100px;
         width: auto;

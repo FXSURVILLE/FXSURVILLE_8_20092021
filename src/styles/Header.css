@@ -21,12 +21,18 @@
 .kasa-nav>a {
     padding-right: 10px;
     color: #FF6060;
+    /* text-decoration: none; */
+}
+/* .kasa-nav>a:hover {
+    text-decoration: underline;
+} */
+
+.navlink {
     text-decoration: none;
 }
-.kasa-nav>a:hover {
+.navlink.selected {
     text-decoration: underline;
 }
-
 
 @media screen and (min-width:992px) {
     .kasa-header {
