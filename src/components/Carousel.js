@@ -46,7 +46,7 @@ class Carousel extends React.Component {
 
     render () {
         let position = (this.state.currentID+1)+"/"+this.length
-        console.log(position)
+        // console.log(position)
         return (
             <div className='carousel'>
                 <img className='carousel_picture' alt="carousel_picture'" src={this.picturesList[this.state.currentID]}></img>

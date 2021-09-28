@@ -10,8 +10,8 @@ class Stars extends React.Component {
         return (
             <div className='stars'>
             {range.map((e) => this.props.rating >= e ? 
-                <Star className='star' /> : 
-                <Star className='star grey' />)}
+                <Star key={e} className='star' /> : 
+                <Star key={e} className='star grey' />)}
             </div>
         )
     }    
