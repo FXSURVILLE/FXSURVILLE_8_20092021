@@ -1,0 +1,30 @@
+#lodging_tags {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+    font-size: 10px;
+    margin-bottom: 16px;
+}
+.lodging_tag {
+    min-width: 84px;
+    height: 18px;
+    background: #FF6060;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    padding: 05px 5px 0px 5px;
+    text-align: center;
+}
+
+@media screen and (min-width:992px) {
+    #lodging_tags {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .lodging_tag {
+        width: 115px;
+        height: 25px;
+        border-radius: 10px;
+    }
+}

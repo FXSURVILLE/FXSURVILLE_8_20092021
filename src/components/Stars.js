@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from "react-router";
 import {ReactComponent as Star} from '../assets/star.svg'
-import '../styles/Stars.css'
+import '../styles/Tags.css'
 
 
 class Stars extends React.Component {

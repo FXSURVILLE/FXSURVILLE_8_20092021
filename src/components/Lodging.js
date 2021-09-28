@@ -3,6 +3,7 @@ import React from 'react';
 import { withRouter } from "react-router";
 // import Star from '../assets/star.svg'
 import {ReactComponent as Chevron} from '../assets/chevron.svg'
+import Tags from './Tags';
 import Stars from './Stars';
 import '../styles/Lodging.css'
 
@@ -27,7 +28,7 @@ class Logement extends React.Component {
         logements.map((logement)=>{
             if (logement.id === this.id ){
                 this.logement = logement
-                console.log(logement)
+                // console.log(logement)
             }
         return this.logement
         })
@@ -53,14 +54,7 @@ class Logement extends React.Component {
                     <div>
                         <h2>{this.logement.title}</h2>
                         <p>{this.logement.location}</p>
-                        <div id='lodging_tags'>
-                            <div className='lodging_tag'>tag1
-                            </div>
-                            <div className='lodging_tag'>tag2
-                            </div>
-                            <div className='lodging_tag'>tag3
-                            </div>
-                        </div>
+                        <Tags equipments={this.logement.equipments}/>
                     </div>
                     <div id='lodging_rate'>
                         <Stars rating={this.logement.rating}/>

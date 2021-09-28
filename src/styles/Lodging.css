@@ -24,7 +24,7 @@
     margin-bottom: 10px;
 }
 
-#lodging_tags {
+/* #lodging_tags {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
@@ -40,7 +40,7 @@
     color: white;
     margin-right: 10px;
     text-align: center;
-}
+} */
 
 #lodging_rate {
     display: flex;
@@ -136,7 +136,7 @@
         font-size: 18px;
         margin-bottom: 10px;
     }
-    #lodging_tags {
+    /* #lodging_tags {
         font-size: 14px;
         margin-bottom: 20px;
     }
@@ -145,7 +145,7 @@
         width: 115px;
         height: 25px;
         border-radius: 10px;
-    }
+    } */
     
     #lodging_rate {
         /* width: 30%; */
