@@ -148,7 +148,7 @@
     } */
     
     #lodging_rate {
-        /* width: 30%; */
+        width: 150px;
         margin-bottom: 15px;
         display: flex;
         flex-direction: column-reverse;
