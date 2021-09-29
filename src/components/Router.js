@@ -43,27 +43,3 @@ class Router extends React.Component {
 }
 
 export default Router
-// export default function App() {
-//   return (
-//     <Router>
-//       <div>
-//         <Header />
-//           <Switch>
-//             <Route path="/">
-//               <Home />
-//             </Route>
-//             <Route path="/a_propos">
-//               <APropos />
-//             </Route>
-//             <Route path="/lodging">
-//               <Lodging />
-//             </Route>
-//             <Route path="*">
-//               <Error />
-//             </Route>
-//           </Switch>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }

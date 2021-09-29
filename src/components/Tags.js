@@ -7,12 +7,12 @@ class Tags extends React.Component {
     render () {
         const equipments = this.props.equipments
         return (
-            <div id='lodging_tags'>
+            <ul id='lodging_tags'>
             {equipments.map((e) => 
-                <div className='lodging_tag'>{e}
-                </div>
+                <li key={e} className='lodging_tag'>{e}
+                </li>
             )}
-            </div>
+            </ul>
         )
     }    
 }

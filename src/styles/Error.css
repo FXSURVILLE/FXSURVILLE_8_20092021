@@ -4,26 +4,21 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
-	font-weight: 500;
-    margin: 0px;
 }
 
 .kasa-error-404 {
 	font-weight: 700;
     font-size: 96px;
     padding-top: 125px;
-    margin: 0px;
 }
 
 .kasa-error-message {
     font-size: 18px;
-    margin: 0px;
     padding-bottom: 130px;
 }
 
 .kasa-error-return {
     font-size: 14px;
-    margin: 0px;
     padding-bottom: 200px;
 }
 
@@ -31,7 +26,6 @@
     .kasa-error-404 {
         font-size: 288px;
         padding-top: 100px;
-        /* height: 350px; */
     }
     
     .kasa-error-message {

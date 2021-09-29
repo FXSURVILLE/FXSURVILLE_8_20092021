@@ -17,36 +17,27 @@ class Carousel extends React.Component {
     }
     clickLast() {
         let last=this.state.currentID
-        console.log("last")
         if(this.state.currentID === 0) {
-            console.log(last)
             last = this.length-1
         } else {--last}
         
-        console.log(last)
         this.setState( {
             currentID: last
         });
-        console.log(this.setstate)
     }
     clickNext() {
         let next=this.state.currentID
-        console.log("next")
         if(next < this.length-1) {
-            console.log(next)
             ++next
         } else {next=0}
         
-        console.log(next)
         this.setState ({
             currentID: next
         });
-        console.log(this.setstate)
     }
 
     render () {
         let position = (this.state.currentID+1)+"/"+this.length
-        // console.log(position)
         return (
             <div className='carousel'>
                 <img className='carousel_picture' alt="carousel_picture'" src={this.picturesList[this.state.currentID]}></img>

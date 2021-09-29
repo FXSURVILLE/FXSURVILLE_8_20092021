@@ -19,10 +19,8 @@
 }
 .card_name {
     position: absolute;
-    font-weight: 500;
     font-size: 18px;
     color: #fff;
-    margin: 0px;
     bottom: 0px;
     padding: 0px 20px 15px 20px;
 }

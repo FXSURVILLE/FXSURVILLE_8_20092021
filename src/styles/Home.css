@@ -30,10 +30,8 @@
 }
 .home_header>p {
     position: absolute;
-    font-weight: 500;
     font-size: 24px;
     color: #fff;
-    margin: 0px;
     bottom: 32px;
     left: 16px;
     width: 217px;
