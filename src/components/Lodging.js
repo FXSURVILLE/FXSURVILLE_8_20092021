@@ -3,7 +3,7 @@ import { withRouter } from "react-router";
 import Carousel from './Carousel';
 import Stars from './Stars';
 import Tags from './Tags';
-import Dropdown from './Dropdown';
+import Collapse from './Collapse';
 import '../styles/Lodging.css'
 
 
@@ -48,8 +48,8 @@ class Logement extends React.Component {
                     </div>
                 </div>
                 <div className='infos'>
-                    <Dropdown name="Description"  text={this.logement.description}/>
-                    <Dropdown name="Equipement"  text={this.logement.equipments}/>
+                    <Collapse name="Description"  text={this.logement.description}/>
+                    <Collapse name="Equipement"  text={this.logement.equipments}/>
                 </div>
             </div>
           );

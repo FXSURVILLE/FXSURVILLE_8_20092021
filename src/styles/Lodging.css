@@ -41,11 +41,11 @@
 .infos {
     margin: 0px 20px 0px 20px;
 }
-.dropdowns {
+.Collapses {
     margin-bottom: 20px;
     width: 100%;
 }
-.dropdown {
+.Collapse {
     background: #FF6060;
     font-size: 13px;
     color: white;
@@ -103,7 +103,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .infos>.dropdowns {
+    .infos>.Collapses {
         width: calc(50% - 3%);
         margin-bottom: 20px;
     }

@@ -18,7 +18,7 @@
 .a_propos_body {
     height: fit-content;
 }
-.Apropos_dropdowns {
+.Apropos_Collapses {
     margin: 0px 20px 20px 20px;
 }
 .Apropos_info {
@@ -51,7 +51,7 @@
         border-radius: 25px;
     }
     
-    .Apropos_dropdowns {
+    .Apropos_Collapses {
         margin: 0px 208px 30px 208px;
     }
     .Apropos_info {
