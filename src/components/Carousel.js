@@ -41,8 +41,8 @@ class Carousel extends React.Component {
         return (
             <div className='carousel'>
                 <img className='carousel_picture' alt="carousel_picture'" src={this.picturesList[this.state.currentID]}></img>
-                <Chevron className='chevron_l'  transform="rotate(-90)" onClick={this.clickLast}/>
-                <Chevron className='chevron_r'  transform="rotate(90)" onClick={this.clickNext}/>
+                <Chevron className='chevron_l'  transform="rotate(-90)" style={this.length === 1 ? { display: 'none' } : {}} onClick={this.clickLast}/>
+                <Chevron className='chevron_r'  transform="rotate(90)" style={this.length === 1 ? { display: 'none' } : {}} onClick={this.clickNext}/>
                 <div className='carousel_postition' >{position}</div>
             </div>
         )
