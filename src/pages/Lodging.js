@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from "react-router";
-import Carousel from './Carousel';
-import Stars from './Stars';
-import Tags from './Tags';
-import Collapse from './Collapse';
+import Carousel from '../components/Carousel';
+import Stars from '../components/Stars';
+import Tags from '../components/Tags';
+import Collapse from '../components/Collapse';
 import '../styles/Lodging.css'
 
 

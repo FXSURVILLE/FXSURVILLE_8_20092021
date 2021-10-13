@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Home from './Home'
-import APropos from './APropos'
-import Lodging from './Lodging'
-import Error from './Error'
+import Home from '../pages/Home'
+import APropos from '../pages/APropos'
+import Lodging from '../pages/Lodging'
+import Error from '../pages/Error'
 
 
 

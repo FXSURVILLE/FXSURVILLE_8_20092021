@@ -10,9 +10,9 @@ class Collapse extends React.Component {
       this.state = {
         hidden: 1
       };
-      this.Collapse = this.Collapse.bind(this);
+      this.collapse = this.collapse.bind(this);
     }
-    Collapse() {
+    collapse() {
         let switchView = this.state.hidden
         if (switchView === 0) {
             switchView = 1
@@ -24,12 +24,12 @@ class Collapse extends React.Component {
 
     render () {
         return (
-            <div className='Collapses'>
-                <div className='Collapse_info'>
+            <div className='collapses'>
+                <div className='collapse_info'>
                     <p>{this.props.name}</p>
-                    <Chevron className='Collapse_chevron' transform={this.state.hidden === 0 ? "" : "rotate(180)"} onClick={this.Collapse}/>
+                    <Chevron className='collapse_chevron' transform={this.state.hidden === 0 ? "" : "rotate(180)"} onClick={this.collapse}/>
                 </div>
-                <ul className='text_Collapse' style={this.state.hidden === 0 ? {} : { display: 'none' }}>
+                <ul className='text_collapse' style={this.state.hidden === 0 ? {} : { display: 'none' }}>
                     {Array.isArray(this.props.text) ? (
                     this.props.text.map((e) => 
                         <li key={e}>{e}</li>
