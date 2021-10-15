@@ -5,6 +5,7 @@ import Stars from '../components/Stars';
 import Tags from '../components/Tags';
 import Collapse from '../components/Collapse';
 import '../styles/Lodging.css'
+import Error from '../pages/Error'
 
 
 const logements = require('../datas/logements.json')
@@ -13,6 +14,7 @@ const logements = require('../datas/logements.json')
 class Logement extends React.Component {
     constructor(props){
         super(props)
+        this.logement = null
         this.id = this.props.match.params.id
         this.recherche()
     }
@@ -26,6 +28,11 @@ class Logement extends React.Component {
     }
  
     render() {
+        if (this.logement === null) {
+            return (
+                <Error />
+            )
+        }
         return (
             <div id='lodging_body'>
                 <div className='lodging_picture'>
